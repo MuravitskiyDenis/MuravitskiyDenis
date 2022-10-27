@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "fb777d8a-bd67-429c-b9e1-1348b46dc6ba",
+		"name": "API *(hw_5)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23962337"
+	},
+	"item": [
+		{
+			"name": "Createuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Arnold\",\r\n    \"email\":\"anakonda@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"tasks\":[10],\r\n    \"companies\":[10],\r\n    \"hobby\":\"chess\",\r\n    \"adress\":\"Kozlova street 28\",\r\n    \"name1\":\"Ivan\",\r\n    \"surname1\":\"Ford\",\r\n    \"fathername1\":\"Roma\",\r\n    \"cat\":\"Max\",\r\n    \"dog\":\"Cheep\",\r\n    \"parrot\":\"Chika\",\r\n    \"cavy\":\"Splinter\",\r\n    \"hamster\":\"Voland\",\r\n    \"squirrel\":\"\",\r\n    \"phone\":\"292756264\",\r\n    \"inn\":\"\",\r\n    \"gender\":\"female\",\r\n    \"birthday\":\"18.09.1985\",\r\n    \"date_start\":\"11.11.1990\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http:\\/\\/users.bugred.ru\\/tasks\\/rest\\/createuser",
+					"host": [
+						"http"
+					],
+					"port": "",
+					"path": [
+						"",
+						"",
+						"",
+						"users.bugred.ru",
+						"",
+						"tasks",
+						"",
+						"rest",
+						"",
+						"createuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Addavatar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/C:/Users/Денис/Downloads/Wolf.jpg"
+						},
+						{
+							"key": "email",
+							"value": "anakonda@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://users.bugred.ru//tasks//rest//addavatar",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"",
+						"tasks",
+						"",
+						"rest",
+						"",
+						"addavatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleteavatar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://users.bugred.ru//tasks//rest//deleteavatar/",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"",
+						"tasks",
+						"",
+						"rest",
+						"",
+						"deleteavatar",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
